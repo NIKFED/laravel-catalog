@@ -16,6 +16,21 @@ final class ProductController extends ApiController
     }
 
 
+    /**
+     * @OA\Get(
+     *     path="/api/product/search",
+     *     @OA\Parameter (
+     *         description="Query for title and description match",
+     *         name="query",
+     *         in="path",
+     *         required=true,
+     *         @OA\Schema(type="string"),
+     *         @OA\Examples(example="string", value="ad", summary="An string value."),
+     *     ),
+     *     @OA\Response(response="400", description="Parameter query not specified"),
+     *     @OA\Response(response="200", description="Get product with category by title and description match")
+     * )
+     */
     public function search(SearchActionContract $searchActionContract): JsonResponse
     {
         if (!$this->request->has('query')) {
