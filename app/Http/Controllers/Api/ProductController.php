@@ -22,7 +22,7 @@ final class ProductController extends ApiController
      *     @OA\Parameter (
      *         description="Query for title and description match",
      *         name="query",
-     *         in="path",
+     *         in="query",
      *         required=true,
      *         @OA\Schema(type="string"),
      *         @OA\Examples(example="string", value="ad", summary="An string value."),
