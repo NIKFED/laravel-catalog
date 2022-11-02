@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'subcategories_count' => 10,
+    'subcategories_count' => 30,
 ];
