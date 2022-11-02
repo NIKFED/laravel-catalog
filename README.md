@@ -10,3 +10,5 @@
 - generate api documentation
 ```./vendor/bin/sail artisan l5-swagger:generate```
 
+host: localhost
+api documentation: localhost/api/documentation
