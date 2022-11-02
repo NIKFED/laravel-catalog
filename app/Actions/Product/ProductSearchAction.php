@@ -2,10 +2,11 @@
 
 namespace App\Actions\Product;
 
+use App\Contracts\SearchActionContract;
 use App\Http\Resources\ProductCollection;
 use App\Repositories\ProductSearchRepository;
 
-final class ProductSearchAction
+final class ProductSearchAction implements SearchActionContract
 {
     public function __construct(
         private readonly ProductSearchRepository $productSearchRepository,
