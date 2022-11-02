@@ -8,6 +8,8 @@ use JsonSerializable;
 
 class CategoryCollection extends ResourceCollection
 {
+    public $collects = CategoryWithSubCategoriesResource::class;
+
     public function toArray($request): array|JsonSerializable|Arrayable
     {
         return parent::toArray($request);

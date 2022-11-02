@@ -3,7 +3,6 @@
 namespace App\Repositories;
 
 use App\Models\Entities\Category;
-use Illuminate\Database\Eloquent\Collection;
 
 class CategoryRepository extends BaseRepository
 {
