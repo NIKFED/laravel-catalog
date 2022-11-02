@@ -1,14 +1,15 @@
 ## Laravel Catalog
 
 - install composer dependencies
-```composer i```
+  ```composer i```
 - enable docker
 - start sail
-```./vendor/bin/sail up -d```
+  ```./vendor/bin/sail up -d```
 - seed db
-```./vendor/bin/sail db:seed```
+  ```./vendor/bin/sail db:seed```
 - generate api documentation
-```./vendor/bin/sail artisan l5-swagger:generate```
+  ```./vendor/bin/sail artisan l5-swagger:generate```
 
-host: localhost
-api documentation: localhost/api/documentation
+host: [localhost](http://localhost)
+
+documentation: [documentation](http://localhost/api/documentation)
